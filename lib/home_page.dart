@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:navbahor4/page3.dart';
+import 'package:navbahor4/turizm%20yuzi/page1.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -36,7 +37,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page3());
+                      MaterialPageRoute(builder: (context) => page1());
                   Navigator.push(context, route);
                 },
                 child: const Text(
@@ -56,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page3());
+                      MaterialPageRoute(builder: (context) => page1());
                   Navigator.push(context, route);
                 },
                 child: const Text(

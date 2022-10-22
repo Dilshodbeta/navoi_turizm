@@ -19,8 +19,11 @@ class _page3State extends State<page3> {
             Container(
                 margin: EdgeInsets.all(15),
                 height: 100,
-                child: Text(
-                    "Sarmishsoy — Oʻzbekistondagi madaniy meros obyekti. Arxeologiya yodgorligi. Obyekt davri: Mil.avv. III-II, mil. VIII—I asrlar. Navoiy viloyatining Navbahor tumanida joylashgan. Obyekt manzili: Sarmishsoy darasi, “Uch tut” MFY. Koʻchmas mulkka boʻlgan huquq: Davlat mulki. Navoiy viloyat tarixi va madaniy merosi davlat muzeyi operativ boshqaruv huquqi asosida. Oʻzbekiston Respublikasi Vazirlar Mahkamasining qarori bilan 2019-yil 4-oktabrda Moddiy madaniy merosning koʻchmas mulk obyektlari milliy roʻyxatiga kiritilgan — davlat muhofazasiga olingan")),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                      "Sarmishsoy — Oʻzbekistondagi madaniy meros obyekti. Arxeologiya yodgorligi. Obyekt davri: Mil.avv. III-II, mil. VIII—I asrlar. Navoiy viloyatining Navbahor tumanida joylashgan. Obyekt manzili: Sarmishsoy darasi, “Uch tut” MFY. Koʻchmas mulkka boʻlgan huquq: Davlat mulki. Navoiy viloyat tarixi va madaniy merosi davlat muzeyi operativ boshqaruv huquqi asosida. Oʻzbekiston Respublikasi Vazirlar Mahkamasining qarori bilan 2019-yil 4-oktabrda Moddiy madaniy merosning koʻchmas mulk obyektlari milliy roʻyxatiga kiritilgan — davlat muhofazasiga olingan"),
+                )),
             SizedBox.fromSize(),
           ]),
         ],

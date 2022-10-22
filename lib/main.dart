@@ -5,19 +5,21 @@ import 'package:circular_bottom_navigation/tab_item.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:navbahor4/Draywer/page14.dart';
+import 'package:navbahor4/Turizm%20turlari/page21.dart';
 import 'package:navbahor4/home_page.dart';
 import 'package:navbahor4/page11.dart';
 import 'package:navbahor4/page3.dart';
 import 'package:navbahor4/page5.dart';
 import 'package:navbahor4/page7.dart';
 import 'package:navbahor4/page8.dart';
-import '';
 
+import 'Draywer/page15.dart';
 import 'Turizmpage.dart';
 import 'page9.dart';
 
 void main(List<String> args) {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
     home: rasm(),
   ));
@@ -30,21 +32,34 @@ class rasm extends StatefulWidget {
   State<rasm> createState() => _rasmState();
 }
 
+Future<void> _launchUrl() async {
+  if (!await launchUrl(Uri.parse("https://goo.gl/maps/44jHh6bFYjb8YtJh7"))) {
+    throw 'Could not launch ${Uri.parse("https://goo.gl/maps/44jHh6bFYjb8YtJh7")}';
+  }
+}
+
+launchUrl(Uri parse) {}
+
 class _rasmState extends State<rasm> {
   int? hozirgiIndex = 0;
 
-  List list = [HomePage(), page8(), page7(), Turizmpage()];
+  List list = [
+    const HomePage(),
+    const page8(),
+    const page15(),
+    const Turizmpage()
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         bottomNavigationBar: CurvedNavigationBar(
-          color: Color.fromARGB(255, 7, 229, 44),
+          color: const Color.fromARGB(255, 7, 229, 44),
           backgroundColor: Colors.blueAccent,
           items: <Widget>[
-            Icon(Icons.home, size: 30),
-            Icon(Icons.nature, size: 30),
-            Icon(Icons.map_sharp, size: 30),
-            Icon(Icons.hotel_rounded, size: 30),
+            const Icon(Icons.home, size: 30),
+            const Icon(Icons.nature, size: 30),
+            const Icon(Icons.map_sharp, size: 30),
+            const Icon(Icons.hotel_rounded, size: 30),
           ],
           onTap: (index) {
             setState(() {
@@ -54,8 +69,8 @@ class _rasmState extends State<rasm> {
         ),
         backgroundColor: Colors.blue,
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 7, 123, 11),
-          title: Center(
+          backgroundColor: const Color.fromARGB(255, 7, 123, 11),
+          title: const Center(
             child: Text(
               "Navoi turizm",
               style: TextStyle(fontSize: 25),
@@ -64,9 +79,9 @@ class _rasmState extends State<rasm> {
           actions: [
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.language),
-              color: Color.fromARGB(255, 59, 255, 62),
-              splashColor: Color.fromARGB(255, 18, 197, 63),
+              icon: const Icon(Icons.language),
+              color: const Color.fromARGB(255, 59, 255, 62),
+              splashColor: const Color.fromARGB(255, 18, 197, 63),
             ),
           ],
         ),
@@ -82,7 +97,7 @@ class _rasmState extends State<rasm> {
             // ignore: unnecessary_new
 
             new ListTile(
-              title: Text("Navoi tarixi"),
+              title: const Text("Navoi tarixi"),
               onTap: () {
                 Route route = MaterialPageRoute(builder: (context) => page7());
                 Navigator.push(context, route);
@@ -92,7 +107,8 @@ class _rasmState extends State<rasm> {
             new ListTile(
               title: new Text("Tabiati"),
               onTap: () {
-                Route route = MaterialPageRoute(builder: (context) => page8());
+                Route route =
+                    MaterialPageRoute(builder: (context) => const page8());
                 Navigator.push(context, route);
               },
               trailing: new Icon(Icons.nature),
@@ -100,7 +116,8 @@ class _rasmState extends State<rasm> {
             new ListTile(
               title: new Text("Turistik imkoniyati"),
               onTap: () {
-                Route route = MaterialPageRoute(builder: (context) => page9());
+                Route route =
+                    MaterialPageRoute(builder: (context) => const page9());
                 Navigator.push(context, route);
               },
               trailing: new Icon(Icons.car_repair),
@@ -108,7 +125,8 @@ class _rasmState extends State<rasm> {
             new ListTile(
               title: new Text("Tabiy yodgorliklari"),
               onTap: () {
-                Route route = MaterialPageRoute(builder: (context) => page11());
+                Route route =
+                    MaterialPageRoute(builder: (context) => const page14());
                 Navigator.push(context, route);
               },
               trailing: new Icon(Icons.account_balance),
@@ -116,7 +134,8 @@ class _rasmState extends State<rasm> {
             new ListTile(
               title: new Text("Dasturdan Chiqish"),
               onTap: () {
-                Route route = MaterialPageRoute(builder: (context) => page9());
+                Route route =
+                    MaterialPageRoute(builder: (context) => const page21());
                 Navigator.push(context, route);
               },
               trailing: new Icon(Icons.exit_to_app),

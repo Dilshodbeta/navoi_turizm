@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:navbahor4/Turizm%20turlari/page16.dart';
+import 'package:navbahor4/Turizm%20turlari/page17.dart';
+import 'package:navbahor4/Turizm%20turlari/page18.dart';
+import 'package:navbahor4/Turizm%20turlari/page19.dart';
+import 'package:navbahor4/Turizm%20turlari/page20.dart';
+import 'package:navbahor4/Turizm%20turlari/page21.dart';
 import 'package:navbahor4/page3.dart';
 import 'package:navbahor4/turizm%20yuzi/page1.dart';
+import 'package:navbahor4/turizm%20yuzi/page2.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -57,27 +64,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page1());
-                  Navigator.push(context, route);
-                },
-                child: const Text(
-                  'Art Turizm',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
-            Container(
-              margin: const EdgeInsets.all(10),
-              width: double.infinity,
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: Color.fromARGB(104, 37, 10, 190),
-                  padding: const EdgeInsets.all(30.0),
-                  textStyle: const TextStyle(fontSize: 20),
-                ),
-                onPressed: () {
-                  Route route =
-                      MaterialPageRoute(builder: (context) => page3());
+                      MaterialPageRoute(builder: (context) => page2());
                   Navigator.push(context, route);
                 },
                 child: const Text(
@@ -97,11 +84,11 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page3());
+                      MaterialPageRoute(builder: (context) => page20());
                   Navigator.push(context, route);
                 },
                 child: const Text(
-                  'Sanoat turizmi',
+                  'Gastronimik turizm',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -117,27 +104,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page3());
-                  Navigator.push(context, route);
-                },
-                child: const Text(
-                  'Tibbiy turizm',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
-            Container(
-              margin: const EdgeInsets.all(10),
-              width: double.infinity,
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: Color.fromARGB(104, 37, 10, 190),
-                  padding: const EdgeInsets.all(30.0),
-                  textStyle: const TextStyle(fontSize: 20),
-                ),
-                onPressed: () {
-                  Route route =
-                      MaterialPageRoute(builder: (context) => page3());
+                      MaterialPageRoute(builder: (context) => page19());
                   Navigator.push(context, route);
                 },
                 child: const Text(
@@ -157,7 +124,67 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page3());
+                      MaterialPageRoute(builder: (context) => page17());
+                  Navigator.push(context, route);
+                },
+                child: const Text(
+                  'Sanoat turizmi',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.all(10),
+              width: double.infinity,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Color.fromARGB(104, 37, 10, 190),
+                  padding: const EdgeInsets.all(30.0),
+                  textStyle: const TextStyle(fontSize: 20),
+                ),
+                onPressed: () {
+                  Route route =
+                      MaterialPageRoute(builder: (context) => page16());
+                  Navigator.push(context, route);
+                },
+                child: const Text(
+                  'Art Turizm',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.all(10),
+              width: double.infinity,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Color.fromARGB(104, 37, 10, 190),
+                  padding: const EdgeInsets.all(30.0),
+                  textStyle: const TextStyle(fontSize: 20),
+                ),
+                onPressed: () {
+                  Route route =
+                      MaterialPageRoute(builder: (context) => page21());
+                  Navigator.push(context, route);
+                },
+                child: const Text(
+                  'Tibbiy turizm',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.all(10),
+              width: double.infinity,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Color.fromARGB(104, 37, 10, 190),
+                  padding: const EdgeInsets.all(30.0),
+                  textStyle: const TextStyle(fontSize: 20),
+                ),
+                onPressed: () {
+                  Route route =
+                      MaterialPageRoute(builder: (context) => page21());
                   Navigator.push(context, route);
                 },
                 child: const Text(
@@ -177,27 +204,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page3());
-                  Navigator.push(context, route);
-                },
-                child: const Text(
-                  'Tarixiy obidalar',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
-            Container(
-              margin: const EdgeInsets.all(10),
-              width: double.infinity,
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: Color.fromARGB(104, 37, 10, 190),
-                  padding: const EdgeInsets.all(30.0),
-                  textStyle: const TextStyle(fontSize: 20),
-                ),
-                onPressed: () {
-                  Route route =
-                      MaterialPageRoute(builder: (context) => page3());
+                      MaterialPageRoute(builder: (context) => page21());
                   Navigator.push(context, route);
                 },
                 child: const Text(
@@ -217,31 +224,11 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page3());
+                      MaterialPageRoute(builder: (context) => page21());
                   Navigator.push(context, route);
                 },
                 child: const Text(
                   'Sport turizmi',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
-            Container(
-              margin: const EdgeInsets.all(10),
-              width: double.infinity,
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: Color.fromARGB(104, 37, 10, 190),
-                  padding: const EdgeInsets.all(30.0),
-                  textStyle: const TextStyle(fontSize: 20),
-                ),
-                onPressed: () {
-                  Route route =
-                      MaterialPageRoute(builder: (context) => page3());
-                  Navigator.push(context, route);
-                },
-                child: const Text(
-                  'Gastronimik turizm',
                   style: TextStyle(color: Colors.white),
                 ),
               ),

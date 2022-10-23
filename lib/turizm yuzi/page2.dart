@@ -15,9 +15,11 @@ class _page2State extends State<page2> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        title: Text(
-          "Tarixiy obidalar",
-          style: TextStyle(color: Color.fromARGB(255, 7, 187, 106)),
+        title: Center(
+          child: Text(
+            "Tarixiy obidalar",
+            style: TextStyle(color: Color.fromARGB(255, 7, 187, 106)),
+          ),
         ),
         backgroundColor: Colors.white,
       ),

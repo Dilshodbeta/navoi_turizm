@@ -1,7 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.navoi_turizm">
+    <uses-permission android:name="android.permission.INTERNET" /> 
+     <queries>
+         <intent>
+             <action android:name="android.intent.action.DIAL" />
+             <data android:scheme="tel" />
+         </intent>
+     </queries>
    <application
-        android:label="navoi_turizm"
+        android:label="fosfor"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

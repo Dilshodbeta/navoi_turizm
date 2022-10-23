@@ -5,14 +5,17 @@ import 'package:circular_bottom_navigation/tab_item.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:navbahor4/Draywer/page14.dart';
 import 'package:navbahor4/Turizm%20turlari/page21.dart';
 import 'package:navbahor4/home_page.dart';
 import 'package:navbahor4/page11.dart';
+import 'package:navbahor4/page22.dart';
 import 'package:navbahor4/page3.dart';
 import 'package:navbahor4/page5.dart';
 import 'package:navbahor4/page7.dart';
 import 'package:navbahor4/page8.dart';
+import 'package:navbahor4/turizm%20yuzi/page2.dart';
 
 import 'Draywer/page15.dart';
 import 'Turizmpage.dart';
@@ -45,7 +48,7 @@ class _rasmState extends State<rasm> {
 
   List list = [
     const HomePage(),
-    const page8(),
+    const page2(),
     const page15(),
     const Turizmpage()
   ];
@@ -57,7 +60,7 @@ class _rasmState extends State<rasm> {
           backgroundColor: Colors.blueAccent,
           items: <Widget>[
             const Icon(Icons.home, size: 30),
-            const Icon(Icons.nature, size: 30),
+            const Icon(Icons.history_edu, size: 30),
             const Icon(Icons.map_sharp, size: 30),
             const Icon(Icons.hotel_rounded, size: 30),
           ],
@@ -134,9 +137,7 @@ class _rasmState extends State<rasm> {
             new ListTile(
               title: new Text("Dasturdan Chiqish"),
               onTap: () {
-                Route route =
-                    MaterialPageRoute(builder: (context) => const page21());
-                Navigator.push(context, route);
+                SystemNavigator.pop();
               },
               trailing: new Icon(Icons.exit_to_app),
             ),

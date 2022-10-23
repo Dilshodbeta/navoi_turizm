@@ -13,8 +13,9 @@ class page15 extends StatefulWidget {
 
 class _page15State extends State<page15> {
   Future<void> _launchUrl() async {
-    if (!await launchUrl(Uri.parse("https://goo.gl/maps/44jHh6bFYjb8YtJh7"))) {
-      throw 'Could not launch ${Uri.parse("https://goo.gl/maps/44jHh6bFYjb8YtJh7")}';
+    if (!await launchUrl(Uri.parse(
+        "https://www.google.com/maps/place/Navoiy,+O%60zbekiston/@40.0980699,65.3365941,13z/data=!3m1!4b1!4m5!3m4!1s0x3f51c6d7e12931b3:0x613f6eb9636019bb!8m2!3d40.103922!4d65.3688335?hl=uz"))) {
+      throw 'Could not launch ${Uri.parse("https://www.google.com/maps/place/Navoiy,+O%60zbekiston/@40.0980699,65.3365941,13z/data=!3m1!4b1!4m5!3m4!1s0x3f51c6d7e12931b3:0x613f6eb9636019bb!8m2!3d40.103922!4d65.3688335?hl=uz")}';
     }
   }
 
@@ -42,7 +43,7 @@ class _page15State extends State<page15> {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'Joylashgan o\'rni',
+                    'Viloyat markazi',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),

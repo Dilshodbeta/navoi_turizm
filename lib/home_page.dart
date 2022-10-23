@@ -64,26 +64,6 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page2());
-                  Navigator.push(context, route);
-                },
-                child: const Text(
-                  'Tarixiy obidalar',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
-            Container(
-              margin: const EdgeInsets.all(10),
-              width: double.infinity,
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: Color.fromARGB(104, 37, 10, 190),
-                  padding: const EdgeInsets.all(30.0),
-                  textStyle: const TextStyle(fontSize: 20),
-                ),
-                onPressed: () {
-                  Route route =
                       MaterialPageRoute(builder: (context) => page20());
                   Navigator.push(context, route);
                 },

@@ -14,7 +14,9 @@ class _page1State extends State<page1> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        
         elevation: 0,
+        iconTheme: IconThemeData(color: Colors.green),
         title: Text(
           "Ekoturistik Hududlar",
           style: TextStyle(color: Color.fromARGB(255, 7, 187, 106)),

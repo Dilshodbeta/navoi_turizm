@@ -24,8 +24,8 @@ class _page15State extends State<page15> {
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          image: DecorationImage(
-              image: AssetImage("images/map.gif"), fit: BoxFit.cover)),
+          image: const DecorationImage(
+              image: AssetImage("assets/images/map.gif"), fit: BoxFit.cover)),
       child: ListView(
         children: [
           Padding(
@@ -35,13 +35,13 @@ class _page15State extends State<page15> {
               width: double.infinity,
               child: TextButton(
                 style: TextButton.styleFrom(
-                  backgroundColor: Color.fromARGB(104, 3, 114, 18),
+                  backgroundColor: const Color.fromARGB(104, 3, 114, 18),
                   padding: const EdgeInsets.all(30.0),
                   textStyle: const TextStyle(fontSize: 20),
                 ),
                 onPressed: _launchUrl,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                child: const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: Text(
                     'Viloyat markazi',
                     style: TextStyle(color: Colors.white),

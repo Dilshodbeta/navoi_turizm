@@ -25,7 +25,7 @@ class _TurizmpageState extends State<Turizmpage> {
                 decoration: const BoxDecoration(
                     image: DecorationImage(
                         fit: BoxFit.cover,
-                        image: AssetImage("assets/images/nemnig.jpg"))),
+                        image: AssetImage("assets/images/navoiy.jpg"))),
                 child: Container(
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
@@ -43,7 +43,7 @@ class _TurizmpageState extends State<Turizmpage> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           "Mehmonxonalar",
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -51,22 +51,22 @@ class _TurizmpageState extends State<Turizmpage> {
                               fontWeight: FontWeight.w600,
                               fontSize: 30),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         TextField(
                           decoration: InputDecoration(
-                            prefixIcon: Icon(
+                            prefixIcon: const Icon(
                               Icons.search,
                             ),
                             filled: true,
                             fillColor: Colors.white,
                             hintText: "Search ...",
-                            hintStyle: TextStyle(color: Colors.grey),
+                            hintStyle: const TextStyle(color: Colors.grey),
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(40),
                                 gapPadding: 0,
-                                borderSide: BorderSide(color: Colors.white)),
+                                borderSide: const BorderSide(color: Colors.white)),
                           ),
                         ),
                       ],
@@ -74,12 +74,12 @@ class _TurizmpageState extends State<Turizmpage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
               Container(
-                padding: EdgeInsets.all(12),
-                child: Text(
+                padding: const EdgeInsets.all(12),
+                child: const Text(
                   "Best Hotels",
                   style: TextStyle(
                       color: Colors.black,
@@ -93,19 +93,19 @@ class _TurizmpageState extends State<Turizmpage> {
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      _cardItem("Hotel 1", "assets/images/nemnig.jpg"),
-                      _cardItem("Hotel 1", "assets/images/nemnig.jpg"),
-                      _cardItem("Hotel 1", "assets/images/nemnig.jpg"),
+                      _cardItem("Hotel 1", "assets/images/navoiy.jpg"),
+                      _cardItem("Hotel 1", "assets/images/navoiy.jpg"),
+                      _cardItem("Hotel 1", "assets/images/navoiy.jpg"),
                     ],
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
-                padding: EdgeInsets.all(8),
-                child: Text(
+                padding: const EdgeInsets.all(8),
+                child: const Text(
                   "Luxury Hotels",
                   style: TextStyle(
                       color: Colors.black,
@@ -119,9 +119,9 @@ class _TurizmpageState extends State<Turizmpage> {
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      _cardItem("Hotel 1", "assets/images/nemnig.jpg"),
-                      _cardItem("Hotel 1", "assets/images/nemnig.jpg"),
-                      _cardItem("Hotel 1", "assets/images/nemnig.jpg"),
+                      _cardItem("Hotel 1", "assets/images/navoiy.jpg"),
+                      _cardItem("Hotel 1", "assets/images/navoiy.jpg"),
+                      _cardItem("Hotel 1", "assets/images/navoiy.jpg"),
                     ],
                   ),
                 ),
@@ -136,7 +136,7 @@ class _TurizmpageState extends State<Turizmpage> {
 
 Widget _cardItem(String name, String img) {
   return Container(
-    margin: EdgeInsets.all(8),
+    margin: const EdgeInsets.all(8),
     width: 200,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(20),
@@ -162,7 +162,7 @@ Widget _cardItem(String name, String img) {
             alignment: Alignment.bottomLeft,
             child: Text(
               name,
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             )),
       ),
     ),

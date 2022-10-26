@@ -16,7 +16,7 @@ import 'package:navbahor4/page5.dart';
 import 'package:navbahor4/page7.dart';
 import 'package:navbahor4/page8.dart';
 import 'package:navbahor4/turizm%20yuzi/page2.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 import 'Draywer/page15.dart';
 import 'Turizmpage.dart';
 import 'page9.dart';
@@ -41,7 +41,6 @@ Future<void> _launchUrl() async {
   }
 }
 
-launchUrl(Uri parse) {}
 
 class _rasmState extends State<rasm> {
   int? hozirgiIndex = 0;

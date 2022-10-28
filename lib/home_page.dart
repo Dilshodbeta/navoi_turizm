@@ -7,7 +7,9 @@ import 'package:navbahor4/Turizm%20turlari/page18.dart';
 import 'package:navbahor4/Turizm%20turlari/page19.dart';
 import 'package:navbahor4/Turizm%20turlari/page20.dart';
 import 'package:navbahor4/Turizm%20turlari/page21.dart';
+import 'package:navbahor4/Ziyorat.dart';
 import 'package:navbahor4/page3.dart';
+import 'package:navbahor4/sanoat.dart';
 import 'package:navbahor4/turizm%20yuzi/page1.dart';
 import 'package:navbahor4/turizm%20yuzi/page2.dart';
 
@@ -84,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page19());
+                      MaterialPageRoute(builder: (context) => Ziyorat());
                   Navigator.push(context, route);
                 },
                 child: const Text(
@@ -104,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {
                   Route route =
-                      MaterialPageRoute(builder: (context) => page17());
+                      MaterialPageRoute(builder: (context) => sanoat());
                   Navigator.push(context, route);
                 },
                 child: const Text(

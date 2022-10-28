@@ -1,18 +1,9 @@
-import 'dart:ui';
 
-import 'package:circular_bottom_navigation/circular_bottom_navigation.dart';
-import 'package:circular_bottom_navigation/tab_item.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:navbahor4/Draywer/page14.dart';
-import 'package:navbahor4/Turizm%20turlari/page21.dart';
 import 'package:navbahor4/home_page.dart';
-import 'package:navbahor4/page11.dart';
-import 'package:navbahor4/page22.dart';
-import 'package:navbahor4/page3.dart';
-import 'package:navbahor4/page5.dart';
 import 'package:navbahor4/page7.dart';
 import 'package:navbahor4/page8.dart';
 import 'package:navbahor4/turizm%20yuzi/page2.dart';
@@ -57,11 +48,11 @@ class _rasmState extends State<rasm> {
         bottomNavigationBar: CurvedNavigationBar(
           color: const Color.fromARGB(255, 7, 229, 44),
           backgroundColor: Colors.blueAccent,
-          items: <Widget>[
-            const Icon(Icons.home, size: 30),
-            const Icon(Icons.history_edu, size: 30),
-            const Icon(Icons.map_sharp, size: 30),
-            const Icon(Icons.hotel_rounded, size: 30),
+          items: const <Widget>[
+            Icon(Icons.home, size: 30),
+            Icon(Icons.history_edu, size: 30),
+            Icon(Icons.map_sharp, size: 30),
+            Icon(Icons.hotel_rounded, size: 30),
           ],
           onTap: (index) {
             setState(() {
@@ -98,47 +89,47 @@ class _rasmState extends State<rasm> {
 
             // ignore: unnecessary_new
 
-            new ListTile(
+            ListTile(
               title: const Text("Navoi tarixi"),
               onTap: () {
-                Route route = MaterialPageRoute(builder: (context) => page7());
+                Route route = MaterialPageRoute(builder: (context) => const page7());
                 Navigator.push(context, route);
               },
-              trailing: new Icon(Icons.auto_stories),
+              trailing: const Icon(Icons.auto_stories),
             ),
-            new ListTile(
-              title: new Text("Tabiati"),
+            ListTile(
+              title: const Text("Tabiati"),
               onTap: () {
                 Route route =
                     MaterialPageRoute(builder: (context) => const page8());
                 Navigator.push(context, route);
               },
-              trailing: new Icon(Icons.nature),
+              trailing: const Icon(Icons.nature),
             ),
-            new ListTile(
-              title: new Text("Turistik imkoniyati"),
+            ListTile(
+              title: const Text("Turistik imkoniyati"),
               onTap: () {
                 Route route =
                     MaterialPageRoute(builder: (context) => const page9());
                 Navigator.push(context, route);
               },
-              trailing: new Icon(Icons.car_repair),
+              trailing: const Icon(Icons.car_repair),
             ),
-            new ListTile(
-              title: new Text("Tabiy yodgorliklari"),
+            ListTile(
+              title: const Text("Tabiy yodgorliklari"),
               onTap: () {
                 Route route =
                     MaterialPageRoute(builder: (context) => const page14());
                 Navigator.push(context, route);
               },
-              trailing: new Icon(Icons.account_balance),
+              trailing: const Icon(Icons.account_balance),
             ),
-            new ListTile(
-              title: new Text("Dasturdan Chiqish"),
+            ListTile(
+              title: const Text("Dasturdan Chiqish"),
               onTap: () {
                 SystemNavigator.pop();
               },
-              trailing: new Icon(Icons.exit_to_app),
+              trailing: const Icon(Icons.exit_to_app),
             ),
           ],
         ))),

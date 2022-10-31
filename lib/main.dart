@@ -10,6 +10,7 @@ import 'package:navbahor4/turizm%20yuzi/page2.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'Draywer/page15.dart';
 import 'Turizmpage.dart';
+import 'imkoniyat.dart';
 import 'page9.dart';
 
 void main(List<String> args) {
@@ -110,7 +111,7 @@ class _rasmState extends State<rasm> {
               title: const Text("Turistik imkoniyati"),
               onTap: () {
                 Route route =
-                    MaterialPageRoute(builder: (context) => const page9());
+                    MaterialPageRoute(builder: (context) => imkoniyat());
                 Navigator.push(context, route);
               },
               trailing: const Icon(Icons.car_repair),

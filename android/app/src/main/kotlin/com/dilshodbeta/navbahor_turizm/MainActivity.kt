@@ -1,4 +1,4 @@
-package com.example.navoi_turizm
+package com.dilshodbeta.navbahor_turizm
 
 import io.flutter.embedding.android.FlutterActivity
 
